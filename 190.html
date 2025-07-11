@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US" class="glue-flexbox">
   <head>
-    <title>News</title>
+    <title>AIP-190: Naming conventions</title>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
@@ -20,6 +20,8 @@
     </script>
     <script type="text/javascript" src="/assets/js/global.js?v=9e6a08fb"></script>
     
+<script type="text/javascript" src="/assets/js/syntax.js"></script>
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140054909-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -64,7 +66,7 @@
               
             
               
-                <li class="glue-header__item glue-header--is-active">
+                <li class="glue-header__item">
                   <a class="glue-header__link" href="/news" aria-level="1">News</a>
                 </li>
               
@@ -164,7 +166,8 @@
     <div class="glue-page">
       
       <main role="main" id="page-content">
-        <nav id="aip-nav" class="docs-component-nav">
+        
+<nav id="aip-nav" class="docs-component-nav">
   <ul class="nav-list">
     <li class="nav-item nav-item-header">AIPs by Scope</li>
     <li class="nav-item">
@@ -492,7 +495,7 @@
         API Versioning
       </a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item nav-item-active">
       <a href="/190">
         <span class="aip-number">190</span>
         Naming conventions
@@ -623,15 +626,24 @@
 <section id="jump-content">
           
 <aside id="aip-sidebar" class="docs-component-sidebar">
+  <table id="aip-summary">
+    <tr><th colspan="2">Naming conventions</th></tr>
+    <tr><td>Number</td><td>190</td></tr>
+    <tr><td>Permalink</td><td><a href="https://google.aip.dev/190">google.aip.dev/190</a></td></tr>
+    <tr><td>State</td><td>Approved</td></tr>
+    <tr><td>Created</td><td>2025-06-10</td></tr>
+    <tr><td>Updated</td><td>2025-06-10</td></tr>
+  </table>
+
   <section id="aip-toc" class="docs-component-sidebar-toc">
     <div class="toc"><span class="toctitle">Contents</span><ul>
-<li><a href="#march-2021">March 2021</a></li>
-<li><a href="#october-2020">October 2020</a></li>
-<li><a href="#august-2020">August 2020</a></li>
-<li><a href="#june-2020">June 2020</a></li>
-<li><a href="#may-2020">May 2020</a></li>
-<li><a href="#april-2020">April 2020</a></li>
-<li><a href="#march-2020">March 2020</a></li>
+<li><a href="#guidance">Guidance</a><ul>
+<li><a href="#interface-names">Interface names</a></li>
+<li><a href="#method-names">Method names</a></li>
+<li><a href="#message-names">Message names</a></li>
+</ul>
+</li>
+<li><a href="#further-reading">Further reading</a></li>
 </ul>
 </div>
 
@@ -640,8 +652,8 @@
   <section class="docs-component-sidebar-actions">
     <ul>
       <li><a href="https://github.com/aip-dev/google.aip.dev/issues/">File Bug</a></li>
-      <li><a href="https://github.com/aip-dev/google.aip.dev/blob/master/pages/general/news.md.j2">View source</a></li>
-      <li><a href="https://github.com/aip-dev/google.aip.dev/edit/master/pages/general/news.md.j2">Edit this page</a></li>
+      <li><a href="https://github.com/aip-dev/google.aip.dev/blob/master/aip/general/0190.md">View source</a></li>
+      <li><a href="https://github.com/aip-dev/google.aip.dev/edit/master/aip/general/0190.md">Edit this page</a></li>
     </ul>
   </section>
 </aside>
@@ -658,183 +670,167 @@
         </a>
       </li>
       
+      <li class="glue-breadcrumbs__item" aria-level="2">
+        <a class="glue-breadcrumbs__link" href="/general">
+          General AIPs
+        </a>
+      </li>
+      
       <li class="glue-breadcrumbs__item glue-breadcrumbs__item--active"
           aria-level="3">
-        News
+        Naming conventions
       </li>
     </ol>
   </nav>
 </section>
-  <h1 id="news">News</h1>
-<p>Want to keep up with the AIP system, and what we are working on? Welcome to the
-<strong>AIP newsletter</strong>, a monthly publication covering new AIP guidance, and any
-other developments useful to API producers.</p>
-<h3 id="march-2021">March 2021</h3>
-<h5 id="auth-and-field-masks"><a href="/news/2021-03"><strong>Auth and Field Masks</strong></a></h5>
-<p>Publishing long-standing guidance around permissions and field masks.</p>
-<div class="aip-newsletter-highlights">
-  <p>Highlights:</p>
-  <ul class="highlights-list">
-
-    <li class="highlight-item">Reviewing:
-      <ul>
-
-        <li><a href="/149">AIP-149</a></li>
-
-        <li><a href="/161">AIP-161</a></li>
-
-        <li><a href="/211">AIP-211</a></li>
-
-      </ul>
-    </li>
-
-
-    <li>Approval of AIPs discussed in the October 2020 newsletter.</li>
-
-  </ul>
-</div>
-
-<h3 id="october-2020">October 2020</h3>
-<h5 id="declarative-friendly-apis"><a href="/news/2020-10"><strong>Declarative-friendly APIs</strong></a></h5>
-<p>Why and how to make an API interface "declarative friendly", in order to
-enable automation on top of it.</p>
-<div class="aip-newsletter-highlights">
-  <p>Highlights:</p>
-  <ul class="highlights-list">
-
-    <li class="highlight-item">Reviewing:
-      <ul>
-
-        <li><a href="/128">AIP-128</a></li>
-
-        <li><a href="/148">AIP-148</a></li>
-
-        <li><a href="/164">AIP-164</a></li>
-
-      </ul>
-    </li>
-
-
-    <li>Declarative-friendly updates to existing AIPs.</li>
-
-  </ul>
-</div>
-
-<h3 id="august-2020">August 2020</h3>
-<h5 id="field-patterns-redux"><a href="/news/2020-08"><strong>Field patterns, redux</strong></a></h5>
-<p>Patterns around sensitive fields.</p>
-<div class="aip-newsletter-highlights">
-  <p>Highlights:</p>
-  <ul class="highlights-list">
-
-    <li class="highlight-item">Reviewing:
-      <ul>
-
-        <li><a href="/147">AIP-147</a></li>
-
-      </ul>
-    </li>
-
-
-  </ul>
-</div>
-
-<h3 id="june-2020">June 2020</h3>
-<h5 id="field-patterns"><a href="/news/2020-06"><strong>Field patterns</strong></a></h5>
-<p>Patterns around ranges and generic fields.</p>
-<div class="aip-newsletter-highlights">
-  <p>Highlights:</p>
-  <ul class="highlights-list">
-
-    <li class="highlight-item">Reviewing:
-      <ul>
-
-        <li><a href="/145">AIP-145</a></li>
-
-        <li><a href="/146">AIP-146</a></li>
-
-      </ul>
-    </li>
-
-
-  </ul>
-</div>
-
-<h3 id="may-2020">May 2020</h3>
-<h5 id="jobs-and-filters"><a href="/news/2020-05"><strong>Jobs and filters</strong></a></h5>
-<p>Formalizing the Job pattern; clarifications coming to filtering.</p>
-<div class="aip-newsletter-highlights">
-  <p>Highlights:</p>
-  <ul class="highlights-list">
-
-    <li class="highlight-item">Reviewing:
-      <ul>
-
-        <li><a href="/152">AIP-152</a></li>
-
-        <li><a href="/160">AIP-160</a></li>
-
-      </ul>
-    </li>
-
-
-  </ul>
-</div>
-
-<h3 id="april-2020">April 2020</h3>
-<h5 id="data-series"><a href="/news/2020-04"><strong>Data Series</strong></a></h5>
-<p>This month's AIPs revolve around handling lists and series of data, which
-present specific challenges in APIs.</p>
-<div class="aip-newsletter-highlights">
-  <p>Highlights:</p>
-  <ul class="highlights-list">
-
-    <li class="highlight-item">Reviewing:
-      <ul>
-
-        <li><a href="/124">AIP-124</a></li>
-
-        <li><a href="/144">AIP-144</a></li>
-
-        <li><a href="/160">AIP-160</a></li>
-
-      </ul>
-    </li>
-
-
-  </ul>
-</div>
-
-<h3 id="march-2020">March 2020</h3>
-<h5 id="welcome-to-the-aip-newsletter"><a href="/news/2020-03"><strong>Welcome to the AIP Newsletter</strong></a></h5>
-<p>The first edition of the AIP newsletter outlines the plan for reviewing
-outstanding proposals, and announces the release of the API linter.</p>
-<div class="aip-newsletter-highlights">
-  <p>Highlights:</p>
-  <ul class="highlights-list">
-
-    <li class="highlight-item">Reviewing:
-      <ul>
-
-        <li><a href="/153">AIP-153</a></li>
-
-        <li><a href="/162">AIP-162</a></li>
-
-        <li><a href="/163">AIP-163</a></li>
-
-        <li><a href="/165">AIP-165</a></li>
-
-        <li><a href="/194">AIP-194</a></li>
-
-      </ul>
-    </li>
-
-
-    <li>The API linter is here!</li>
-
-  </ul>
-</div>
-
+  
+  <h4 class="aip-number">AIP-190</h4>
+  <h1 id="naming-conventions">Naming conventions</h1>
+<p>This topic describes the naming conventions used in Google APIs. In
+general, these conventions apply to all Google-managed services.</p>
+<h2 id="guidance">Guidance</h2>
+<p>In order to provide consistent developer experience across many APIs and
+over a long period of time, all names used by an API <strong>should</strong> be:</p>
+<ul>
+<li>straightforward</li>
+<li>intuitive</li>
+<li>consistent</li>
+</ul>
+<p>This includes names of interfaces, resources, collections, methods, and
+messages.</p>
+<p>Since English is a second language for many developers, one goal of these
+naming conventions is to make every API name understandable to the majority of
+developers. It does this by encouraging the use of a simple, consistent, and
+small vocabulary when naming methods and resources.</p>
+<ul>
+<li>Names used in APIs <strong>should</strong> be in correct American English. For
+    example, license (instead of licence), color (instead of colour).</li>
+<li>Commonly accepted short forms or abbreviations of long words <strong>may</strong>
+    be used for brevity. For example, API is preferred over Application
+    Programming Interface.</li>
+<li>Unless otherwise specified, definitions <strong>must</strong> use UpperCamelCase names,
+    as defined by
+    <a href="https://google.github.io/styleguide/javaguide.html#s5.3-camel-case">Google Java Style</a>.</li>
+<li>Use intuitive, familiar terminology where possible. For example,
+    when describing removing (and destroying) a resource, delete is
+    preferred over erase.</li>
+<li>Use the same name or term for the same concept, including for
+    concepts shared across APIs.</li>
+<li>Avoid name overloading. Use different names for different concepts.</li>
+<li>Avoid overly general names that are ambiguous within the context of
+    the API and the larger ecosystem of Google APIs. They can lead to
+    misunderstanding of API concepts. Rather, choose specific names that
+    accurately describe the API concept. This is particularly important
+    for names that define first-order API elements, such as resources.
+    There is no definitive list of names to avoid, as every name must be
+    evaluated in the context of other names. Instance, info, and service
+    are examples of names that have been problematic in the past. Names
+    chosen should describe the API concept clearly (for example:
+    instance of what?) and distinguish it from other relevant concepts
+    (for example: does "alert" mean the rule, the signal, or the
+    notification?).</li>
+<li>Carefully consider use of names that may conflict with keywords in
+    common programming languages. Such names <strong>may</strong> be used but will
+    likely trigger additional scrutiny during API review. Use them
+    judiciously and sparingly.</li>
+</ul>
+<h3 id="interface-names">Interface names</h3>
+<p>To avoid confusion with <a href="/9#api-service-name">Service Names</a> such as
+<code>pubsub.googleapis.com</code>, the term <em>interface name</em> refers to the name
+used when defining a <code>service</code> in a .proto file:</p>
+<div class="highlight language-proto"><pre><span></span><code><span class="c1">// Library is the interface name.</span>
+<span class="kd">service</span> <span class="n">Library</span> <span class="p">{</span>
+  <span class="k">rpc</span> <span class="n">ListBooks</span><span class="p">(</span><span class="o">...</span><span class="p">)</span> <span class="k">returns</span> <span class="p">(</span><span class="o">...</span><span class="p">);</span>
+  <span class="k">rpc</span> <span class="o">...</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>You can think of the <em>service name</em> as a reference to the actual
+implementation of a set of APIs, while the <em>interface name</em> refers to
+the abstract definition of an API.</p>
+<p>An interface name <strong>should</strong> use an intuitive noun such as Calendar or
+BlobStore. The name <strong>should not</strong> conflict with any well-established
+concepts in programming languages and their runtime libraries (for
+example, File).</p>
+<p>In the rare case where an <em>interface name</em> would conflict with another
+name within the API, a suffix (for example <code>Api</code> or <code>Service</code>)
+<strong>should</strong> be used to disambiguate.</p>
+<h3 id="method-names">Method names</h3>
+<p>A service <strong>may</strong>, in its IDL specification, define one or more API
+methods that correspond to methods on collections and resources. The
+method names <strong>should</strong> follow the naming convention of <code>VerbNoun</code> in
+UpperCamelCase, where the noun is typically the resource type.</p>
+<p>Standard methods, and their Batch variants, define their naming guidance in
+the following documents:</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Standard</th>
+<th>Batch</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Get</code></td>
+<td><a href="/131">AIP-131</a></td>
+<td><a href="/231">AIP-231</a></td>
+</tr>
+<tr>
+<td><code>List</code></td>
+<td><a href="/132">AIP-132</a></td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><code>Create</code></td>
+<td><a href="/133">AIP-133</a></td>
+<td><a href="/233">AIP-233</a></td>
+</tr>
+<tr>
+<td><code>Update</code></td>
+<td><a href="/134">AIP-134</a></td>
+<td><a href="/234">AIP-234</a></td>
+</tr>
+<tr>
+<td><code>Delete</code></td>
+<td><a href="/135">AIP-135</a></td>
+<td><a href="/235">AIP-235</a></td>
+</tr>
+</tbody>
+</table>
+<p>All other methods are considered Custom Methods and adhere to <a href="/136">AIP-136</a> naming
+guidance.</p>
+<h3 id="message-names">Message names</h3>
+<p>Message names <strong>should</strong> be short and concise. Avoid unnecessary or redundant
+words. Adjectives can often be omitted if there is no corresponding message
+without the adjective. For example, the <code>Shared</code> in <code>SharedProxySettings</code> is
+unnecessary if there are no <em>unshared</em> proxy settings.</p>
+<p>Message names <strong>should not</strong> include prepositions (e.g. "With", "For").
+Generally, message names with prepositions are better represented with
+optional fields on the message.</p>
+<h4 id="request-and-response-messages">Request and response messages</h4>
+<p>For request and response message names, see <a href="/136">AIP-136</a> for custom methods and the 
+appropriate AIP for
+<a href="https://google.aip.dev/general#operations">standard methods</a>.</p>
+<h2 id="further-reading">Further reading</h2>
+<ul>
+<li>For proto and language package naming, see <a href="/191">AIP-191</a>.</li>
+<li>For collection ID naming conventions, see
+    <a href="/122#collection-identifiers">AIP-122</a>.</li>
+<li>For Enum names, see <a href="/126">AIP-126</a>.</li>
+<li>For field names, see <a href="/140">AIP-140</a>.</li>
+<li>For repeated field names, see <a href="./0140#repeated-fields">AIP-140</a>.</li>
+<li>For fields representing times and durations, see <a href="/142">AIP-142</a>.</li>
+<li>For fields representing dates and times of day, see
+    <a href="./0142#civil-dates-and-times">AIP-142</a>.</li>
+<li>For fields representing a quantity, see <a href="/141">AIP-141</a>.</li>
+<li>For the canonical <code>List</code> method <code>filter</code> field, see
+    <a href="./0132#filtering">AIP-132</a>.</li>
+<li>For the canonical <code>List</code> response message, see
+    <a href="./0132#response-message">AIP-132</a>.</li>
+<li>For well known abbreviations, see <a href="./0140#abbreviations">AIP-140</a>.</li>
+</ul>
+<!-- Need these link values for the table entries which won't be hot-linked by
+the site-generator like plain text would be -->
   <footer>
   Except as otherwise noted, the content of this page is licensed under the
   <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons
@@ -843,7 +839,7 @@ outstanding proposals, and announces the release of the API linter.</p>
   <span class="no-print">For details, see <a href="/licensing">content
   licensing</a>.</span>
 </footer>
-  </section>
+</section>
 
         </section>
       </main>
